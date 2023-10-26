@@ -70,6 +70,15 @@ public:
   min_heapify(heap, 0, n);
   return tmp;
  }
+ // is_empty()
+ bool is_empty()
+ {
+  if (n == 0)
+  {
+   return true;
+  }
+  return false;
+ }
  // print
  void print_vec()
  {
@@ -120,4 +129,3 @@ void heap_sort(std::vector<int> &v)
  }
  print_vec(sorted);
 }
-
